@@ -34,7 +34,6 @@
         .card img {
             width: 100%;
             max-width: 500px;
-            height: auto; /* Mantiene le proporzioni corrette dell'immagine */
             border-radius: 10px;
             margin: 20px 0;
         }
@@ -50,26 +49,43 @@
             color: #777;
         }
 
-        @media (max-width: 600px) {
-            .card {
-                width: 95%; /* Riduce la larghezza della card su schermi piccoli */
-            }
+        /* Stile del pulsante */
+        .btn {
+            background-color: #ff4081; /* Colore di sfondo rosa */
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            text-decoration: none;
+            border-radius: 25px;
+            display: inline-block;
+            transition: background-color 0.3s, transform 0.2s;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #ff80ab; /* Colore di sfondo più chiaro al passaggio del mouse */
+            transform: scale(1.05); /* Leggera ingranditura al passaggio del mouse */
+        }
+
+        .btn:active {
+            background-color: #f50057; /* Colore ancora più scuro al clic */
         }
     </style>
 </head>
 <body>
     <div class="card">
-        <h1>Buon Natale Patatah 💞🎄</h1>
+        <h1>Buon Natale Patatah 🎄</h1>
         <p>
             Questo Natale ho pensato di regalarti un momento che hai sempre sognato :)<br>
         </p>
-        <img src="https://www.liveinup.it/uploads/experiences/cover/passeggiata-a-cavallo-in-trentino-alto-adige-vicino-trento.jpg" alt="Passeggiata a cavallo">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABkAAAAP1CAIAAAC2UbSRAAAgAElEQVR4Aey95Xcc17b1ff7OZ9wD4cSOmdmSTHFyILHFDN0tNIqZ" alt="Passeggiata a cavallo">
         <p>
-            A mille altre avventure<br>
-            Per Emma, la più alta forma del Genio💞.
+            A mille altre avventure 💞💞<br>
+            Per Emma, la più alta forma del Genio.
         </p>
-        <a href="https://societagricolafontana.com/escursioni-cavallo-stefano-cadore/" target="_blank">Scopri di più sull'escursione</a>
-        <div class="footer">Con tutto il mio amore, <br>Il tuo Riccardo💞</div>
+        <!-- Pulsante con link -->
+        <a href="https://societagricolafontana.com/escursioni-cavallo-stefano-cadore/" target="_blank" class="btn">Scopri di più sull'escursione</a>
+        <div class="footer">Con tutto il mio amore, <br>Il tuo Riccardo 💞</div>
     </div>
 </body>
 </html>
